@@ -43,6 +43,16 @@
             display: flex;
             justify-content: center;
         }
+        #frequencyContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #frequency{
+      color:white;
+    
+    }
         canvas {height: 500px!important ; width: 500px !important;}
         @media only screen and (max-width: 600px) {
       canvas {height: 300px!important ; width: 300px !important;}
@@ -71,6 +81,9 @@
                 </fieldset>
 
             </form>
+            <div id="frequencyContainer">
+              <div id="frequency"></div>
+            </div>
         </div>
     </div>
 
@@ -182,6 +195,41 @@
 
         const updateParams = () => {
             m = sliders.m.value();
+            if(m==1){
+                document.getElementById("frequency").innerHTML="60Hz"
+            }else if(m==2){
+                document.getElementById("frequency").innerHTML="120Hz"
+            }else if(m==3){
+                document.getElementById("frequency").innerHTML="170Hz"
+            }else if(m==4){
+                document.getElementById("frequency").innerHTML="240Hz"
+            }else if(m==5){
+                document.getElementById("frequency").innerHTML="310Hz"
+            }else if(m==6){
+                document.getElementById("frequency").innerHTML="430Hz"
+            }else if(m==7){
+                document.getElementById("frequency").innerHTML="345Hz"
+            }else if(m==8){
+                document.getElementById("frequency").innerHTML="1033Hz"
+            }else if(m==8){
+                document.getElementById("frequency").innerHTML="1820Hz"
+            }else if(m==9){
+                document.getElementById("frequency").innerHTML="2041Hz"
+            }else if(m==10){
+                document.getElementById("frequency").innerHTML="3240Hz"
+            }else if(m==11){
+                document.getElementById("frequency").innerHTML="3835Hz"
+            }else if(m==12){
+                document.getElementById("frequency").innerHTML="3975Hz"
+            }else if(m==13){
+                document.getElementById("frequency").innerHTML="4444Hz"
+            }else if(m==14){
+                document.getElementById("frequency").innerHTML="4840Hz"
+            }else if(m==15){
+                document.getElementById("frequency").innerHTML="5201Hz"
+            }else if(m==16){
+                document.getElementById("frequency").innerHTML="5284Hz"
+            }
 
         }
 
